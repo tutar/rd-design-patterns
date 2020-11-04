@@ -269,30 +269,5 @@
             </plugins>
         </pluginManagement>
 
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <phase>validate</phase>
-                        <configuration>
-                            <configLocation>google_checks.xml</configLocation>
-                            <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
-                            <encoding>UTF-8</encoding>
-                            <failOnViolation>true</failOnViolation>
-                            <violationSeverity>warning</violationSeverity>
-                            <includeTestSourceDirectory>false</includeTestSourceDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
     </build>
 </project>
