@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.tutar.pattern.chain</OriginalElement>
+  <nodes>
+    <node x="0.0" y="125.0">org.tutar.pattern.chain.handlers.SocketHandler</node>
+    <node x="236.0" y="245.0">org.tutar.pattern.chain.ChainApp</node>
+    <node x="445.0" y="245.0">org.tutar.pattern.chain.Request</node>
+    <node x="262.0" y="125.0">org.tutar.pattern.chain.handlers.FileHandler</node>
+    <node x="0.0" y="245.0">org.tutar.pattern.chain.Manager</node>
+    <node x="262.0" y="0.0">org.tutar.pattern.chain.Handler</node>
+    <node x="524.0" y="125.0">org.tutar.pattern.chain.handlers.ConsoleHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.tutar.pattern.chain.handlers.ConsoleHandler" target="org.tutar.pattern.chain.Handler">
+      <point x="0.0" y="-37.5" />
+      <point x="645.0" y="100.0" />
+      <point x="463.6666666666667" y="100.0" />
+      <point x="80.66666666666669" y="37.5" />
+    </edge>
+    <edge source="org.tutar.pattern.chain.handlers.FileHandler" target="org.tutar.pattern.chain.Handler">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="org.tutar.pattern.chain.handlers.SocketHandler" target="org.tutar.pattern.chain.Handler">
+      <point x="0.0" y="-37.5" />
+      <point x="121.0" y="100.0" />
+      <point x="302.3333333333333" y="100.0" />
+      <point x="-80.66666666666669" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2019195556640625" x="371.6252967537991" y="249.44071906460664" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
