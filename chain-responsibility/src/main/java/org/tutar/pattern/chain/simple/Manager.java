@@ -1,8 +1,8 @@
-package org.tutar.pattern.chain;
+package org.tutar.pattern.chain.simple;
 
-import org.tutar.pattern.chain.handlers.ConsoleHandler;
-import org.tutar.pattern.chain.handlers.FileHandler;
-import org.tutar.pattern.chain.handlers.SocketHandler;
+import org.tutar.pattern.chain.simple.handlers.ConsoleHandler;
+import org.tutar.pattern.chain.simple.handlers.FileHandler;
+import org.tutar.pattern.chain.simple.handlers.SocketHandler;
 
 import java.util.ArrayList;
 import java.util.List;

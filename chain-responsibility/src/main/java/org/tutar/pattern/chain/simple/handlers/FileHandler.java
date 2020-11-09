@@ -1,7 +1,7 @@
-package org.tutar.pattern.chain.handlers;
+package org.tutar.pattern.chain.simple.handlers;
 
-import org.tutar.pattern.chain.Handler;
-import org.tutar.pattern.chain.Request;
+import org.tutar.pattern.chain.simple.Handler;
+import org.tutar.pattern.chain.simple.Request;
 
 /**
  * @author tutar

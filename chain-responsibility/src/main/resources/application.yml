@@ -1,0 +1,6 @@
+spring.application.name: chain
+spring.profiles.active: dev
+
+logging:
+  file: ${user.home}/logs/chain.log
+  level.root: INFO

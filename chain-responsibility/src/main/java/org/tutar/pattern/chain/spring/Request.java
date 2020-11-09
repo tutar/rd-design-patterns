@@ -1,4 +1,4 @@
-package org.tutar.pattern.chain;
+package org.tutar.pattern.chain.spring;
 
 /**
  * 请求对象
