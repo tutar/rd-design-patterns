@@ -1,0 +1,6 @@
+spring.application.name: chain
+
+logging:
+  file: ${user.home}/logs/chain.log
+  level.root: INFO
+  level.org.tutar.pattern: DEBUG

@@ -6,6 +6,7 @@ package org.tutar.pattern.chain.spring;
  */
 public class Request {
     private String name;
+    private Boolean skpSign=false;
 
     public String getName() {
         return name;
@@ -13,5 +14,13 @@ public class Request {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Boolean getSkpSign() {
+        return skpSign;
+    }
+
+    public void setSkpSign(Boolean skpSign) {
+        this.skpSign = skpSign;
     }
 }

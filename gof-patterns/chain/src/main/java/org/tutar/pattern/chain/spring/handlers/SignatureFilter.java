@@ -20,7 +20,11 @@ public class SignatureFilter implements Filter {
 
     @Override
     public Boolean isHandleAble(Request request) {
-        return true;
+        Boolean skip = !request.getSkpSign();
+        if(!skip){
+            LOGGER.info("skip filter:{}",this.getClass().getSimpleName());
+        }
+        return skip;
     }
 
     @Override

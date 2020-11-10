@@ -13,7 +13,7 @@
             <maxHistory>7</maxHistory>
         </rollingPolicy>
     </appender>
-    <springProfile name="dev, uat">
+    <springProfile name="dev,test, uat">
         <root level="INFO">
             <appender-ref ref="CONSOLE"/>
             <appender-ref ref="FILE"/>

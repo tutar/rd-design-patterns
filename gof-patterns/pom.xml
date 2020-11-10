@@ -8,7 +8,10 @@
         <artifactId>rd-design-patterns</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <artifactId>gof-patterns</artifactId>
+    <packaging>pom</packaging>
+
     <modules>
         <module>chain</module>
     </modules>

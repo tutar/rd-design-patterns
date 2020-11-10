@@ -2,6 +2,7 @@ package org.tutar.pattern.chain.spring;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,7 @@ import java.util.stream.Collectors;
 /**
  * @author tutar
  */
-@RestController
+@Service
 public final class FilterManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(FilterManager.class);
 
@@ -28,17 +29,19 @@ public final class FilterManager {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * 责任链调用入口
+     * @param request 待处理对象
+     * @return
+     */
     public void doFilter(Request request){
         for(Filter filter: filters){
             if(filter.isHandleAble(request) && !filter.process(request) ){
+                LOGGER.info("filters process break at:{}",filter.getClass().getSimpleName());
                 break;
             }
         }
+        LOGGER.info("filter process finish...");
     }
 
-    @GetMapping("/api/chain")
-    public Boolean requestHandler(){
-        this.doFilter(new Request());
-        return Boolean.TRUE;
-    }
 }
