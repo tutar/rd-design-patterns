@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>chain-responsibility</module>
+        <module>gof-patterns</module>
+        <module>microservice-patterns</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
