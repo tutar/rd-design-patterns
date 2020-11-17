@@ -18,10 +18,7 @@ public class SingletonApp {
         Singleton singleton2 = Singleton.getInstance();
         LOGGER.info("\nsingleton1:{},\nsingleton2:{}",singleton1,singleton2);
 
-        // enum singleton
-        EnumSingleton enumSingleton1 = EnumSingleton.INSTANCE;
-        EnumSingleton enumSingleton2 = EnumSingleton.INSTANCE;
-        LOGGER.info("\nenumSingleton1:{},\nenumSingleton2=:{}", enumSingleton1,enumSingleton2);
+
 
         // double check lock
         SingletonDoubleCheckLockThreadSafe dcSingle1 = SingletonDoubleCheckLockThreadSafe.getInstance();
@@ -32,5 +29,10 @@ public class SingletonApp {
         SingletonInitializationOnDemandHolderIdiom demandHolderSingleton1 = SingletonInitializationOnDemandHolderIdiom.getInstance();
         SingletonInitializationOnDemandHolderIdiom demandHolderSingleton2 = SingletonInitializationOnDemandHolderIdiom.getInstance();
         LOGGER.info("\ndemandHolderSingleton1:{},\ndemandHolderSingleton2=:{}", demandHolderSingleton1,demandHolderSingleton2);
+
+        // enum singleton
+        EnumSingleton enumSingleton1 = EnumSingleton.INSTANCE;
+        EnumSingleton enumSingleton2 = EnumSingleton.INSTANCE;
+        LOGGER.info("\nenumSingleton1:{},\nenumSingleton2=:{}", enumSingleton1,enumSingleton2);
     }
 }

@@ -1,10 +1,10 @@
-package org.tutar.pattern.chain.spring.handlers;
+package org.tutar.pattern.chain.examples.spring.handlers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.tutar.pattern.chain.spring.Filter;
-import org.tutar.pattern.chain.spring.Request;
+import org.tutar.pattern.chain.examples.spring.Filter;
+import org.tutar.pattern.chain.examples.spring.Request;
 
 
 /**

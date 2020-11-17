@@ -1,4 +1,4 @@
-package org.tutar.pattern.chain.spring;
+package org.tutar.pattern.chain.examples.spring;
 
 
 import org.springframework.core.Ordered;
