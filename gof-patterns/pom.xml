@@ -14,6 +14,7 @@
 
     <modules>
         <module>chain</module>
+        <module>singleton</module>
     </modules>
 
     <build>
