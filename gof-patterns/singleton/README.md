@@ -7,7 +7,7 @@
 - 单例类对外提供一个访问该单例的全局访问点
 
 ## 类图
-![alt text](./material/singleton.uml.png "单例模式类图")
+![alt text](material/singleton_uml.png "单例模式类图")
 
 ## 例子
 * [java.lang.Runtime#getRuntime()](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)
