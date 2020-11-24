@@ -1,9 +1,9 @@
 # rd-design-patterns
 
 
-## [GoF 设计模式](./gof-patterns/README.md)
-- [责任链模式](./gof-patterns/chain/README.md)
-- [单例模式](./gof-patterns/singleton/README.md)
+## [GoF 设计模式](./gof-patterns)
+- [责任链模式](./gof-patterns/chain)
+- [单例模式](./gof-patterns/singleton)
 
 ### 目录结构
 
